@@ -21,9 +21,9 @@ app.post("/api/updatedata", (request, response) => {
         return response.send({ success: false })
     }
     
-    data.value = request.body.value
+    data.property.value = request.body.value
 
-    res.send({ success: true })
+    response.send({ success: true })
 })
 
 app.listen(port, () => { console.log(`App is listening on port ${port}`)})

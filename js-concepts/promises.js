@@ -6,8 +6,18 @@ function promiseTest() {
     });
 }
 
+/* 
 promiseTest()
     .then(object => {
         console.log(object)
         console.log("Promise has been resolved!")
     })
+*/
+
+async function asyncFunction() {
+    const object = await promiseTest()
+    console.log(object)
+    console.log("Promise has been resolved.")
+}
+
+asyncFunction()
