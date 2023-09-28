@@ -9,6 +9,16 @@ const data = {
     }
 }
 
+
+//revert back to this code if needed
+/*
+const data = {
+    property: {
+        value: "this is the value of the property of an object (an object is like a python dictionary)"
+    }
+}
+*/
+
 // middleware
 app.use(express.json())
 
@@ -26,4 +36,4 @@ app.post("/api/updatedata", (request, response) => {
     response.send({ success: true })
 })
 
-app.listen(port, () => { console.log(`App is listening on port ${port}`)})
+app.listen(port, () => { console.log(`Never gonna give you up, never gonna let you down, never gonna run around... sorry. I got distracted. Anyways, the app is listening on port ${port}.`)})
