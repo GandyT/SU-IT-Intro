@@ -40,7 +40,7 @@ const updateData = async () => {
         {
             method: "POST",  
             headers: {"Content-Type": "application/json"}, //assigning objects to postUrl and ˅
-            body: JSON.stringify({value: "New and updated value"}) // updating data in server with values
+            body: JSON.stringify({value: "Ooh la la!!!"}) // updating data in server with values
         }
     )
 
